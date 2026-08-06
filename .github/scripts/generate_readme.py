@@ -56,7 +56,9 @@ def main():
         folder_path = os.path.join(workspace_dir, folder)
         readme_path = os.path.join(folder_path, "README.md")
         
-        title = folder.replace('-', ' ').title()
+        # Clean title from folder name if README not present
+        title_raw = re.sub(r'^\d+-', '', folder).replace('-', ' ').title()
+        title = title_raw
         link = ""
         difficulty = "Unknown"
         
@@ -83,7 +85,7 @@ def main():
             sol_files = []
             
         sol_links = []
-        for sf in sol_files:
+        for sf in sorted(sol_files):
             _, ext = os.path.splitext(sf)
             ext = ext.lower()
             if ext in LANG_MAP:
@@ -158,7 +160,7 @@ Here is the list of problems solved in this repository:
 
 ## 🛠️ Tech Stack & Structure
 
-- **Structure:** Each problem has its own directory containing:
+- **Structure:** Each problem has its own directory formatted as `XXXX-problem-name` containing:
   - `README.md` - The problem description, examples, and constraints.
   - Solution file(s) (e.g. `.py`, `.cpp`, `.java`).
 
@@ -175,7 +177,7 @@ To run or test any of the solutions locally:
 2. **Run a solution:**
    ```bash
    # Example Python
-   python "10-regular-expression-matching/regular-expression-matching.py"
+   python "0010-regular-expression-matching/regular-expression-matching.py"
    ```
 
 ---
