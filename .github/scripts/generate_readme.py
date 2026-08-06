@@ -188,5 +188,28 @@ To run or test any of the solutions locally:
 
     print(f"README.md successfully updated at {output_readme_path}")
 
+    # Write to GitHub Step Summary if running in GitHub Actions
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_path:
+        summary_content = f"""## 🚀 Auto Update README Execution Summary
+
+### 📊 Repository Statistics
+- 🟢 **Easy:** {easy_count}
+- 🟡 **Medium:** {medium_count}
+- 🔴 **Hard:** {hard_count}
+- 📈 **Total Solved:** {len(problems)}
+
+### 💻 Languages Breakdown
+{lang_stats_str}
+
+✅ **README.md was successfully updated and synchronized!**
+"""
+        try:
+            with open(summary_path, "a", encoding="utf-8") as sf:
+                sf.write(summary_content)
+            print("Successfully written to GITHUB_STEP_SUMMARY.")
+        except Exception as e:
+            print(f"Failed to write to GITHUB_STEP_SUMMARY: {e}")
+
 if __name__ == "__main__":
     main()

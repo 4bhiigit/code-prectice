@@ -6,6 +6,7 @@ on:
       - main
     paths-ignore:
       - 'README.md'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -21,27 +22,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Auto-update README with retry & rebase
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+      - name: Generate README & Job Summary
+        run: python3 .github/scripts/generate_readme.py
 
-          for i in {1..5}; do
-            echo "Attempt $i to update and push README..."
-            git pull --rebase origin main
-            python3 .github/scripts/generate_readme.py
-            git add README.md
-            if ! git diff --cached --quiet; then
-              git commit -m "docs: auto-update README.md [skip ci]"
-              if git push origin main; then
-                echo "Successfully updated and pushed README.md!"
-                exit 0
-              fi
-            else
-              echo "No changes to README.md."
-              exit 0
-            fi
-            sleep 2
-          done
-          echo "Failed to push README.md after 5 attempts."
-          exit 1
+      - name: Commit and push changes if updated
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: auto-update README.md [skip ci]"
+          file_pattern: "README.md"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
