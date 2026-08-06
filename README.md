@@ -14,8 +14,8 @@ Welcome to my personal code practice repository! This repository is a curated co
 
 ### 💻 Languages Used
 - 🐍 **Python:** 19
+- ☕ **Java:** 3
 - ⚡ **C++:** 2
-- ☕ **Java:** 2
 
 ---
 
@@ -45,7 +45,7 @@ Here is the list of problems solved in this repository:
 | 18 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | 🟢 Easy | [valid-parentheses.java](./20-valid-parentheses/valid-parentheses.java), [valid-parentheses.py](./20-valid-parentheses/valid-parentheses.py) |
 | 19 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | 🟢 Easy | [merge-two-sorted-lists.java](./21-merge-two-sorted-lists/merge-two-sorted-lists.java), [merge-two-sorted-lists.py](./21-merge-two-sorted-lists/merge-two-sorted-lists.py) |
 | 20 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | 🟡 Medium | [generate-parentheses.py](./22-generate-parentheses/generate-parentheses.py) |
-| 21 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | 🔴 Hard | [merge-k-sorted-lists.py](./23-merge-k-sorted-lists/merge-k-sorted-lists.py) |
+| 21 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | 🔴 Hard | [merge-k-sorted-lists.java](./23-merge-k-sorted-lists/merge-k-sorted-lists.java), [merge-k-sorted-lists.py](./23-merge-k-sorted-lists/merge-k-sorted-lists.py) |
 | 22 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | 🔴 Hard | [stone-game-v.py](./1685-stone-game-v/stone-game-v.py) |
 
 ---
