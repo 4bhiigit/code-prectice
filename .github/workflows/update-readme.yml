@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: readme-update-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -18,13 +22,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
       - name: Generate README
-        run: python .github/scripts/generate_readme.py
+        run: python3 .github/scripts/generate_readme.py
 
       - name: Commit and push if changed
         run: |
