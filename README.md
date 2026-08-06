@@ -6,8 +6,8 @@ All solutions are implemented in **Python** with focus on correctness, optimal t
 
 ## 📊 Repository Summary
 
-- **Total Solved:** 9
-- 🟢 **Easy:** 1
+- **Total Solved:** 10
+- 🟢 **Easy:** 2
 - 🟡 **Medium:** 5
 - 🔴 **Hard:** 3
 
@@ -27,7 +27,8 @@ Here is the list of problems solved in this repository:
 | 6 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | 🟡 Medium | [container-with-most-water.py](./11-container-with-most-water/container-with-most-water.py) |
 | 7 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | 🟡 Medium | [integer-to-roman.py](./12-integer-to-roman/integer-to-roman.py) |
 | 8 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | 🟢 Easy |  |
-| 9 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | 🔴 Hard | [stone-game-v.py](./1685-stone-game-v/stone-game-v.py) |
+| 9 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | 🟢 Easy | [longest-common-prefix.py](./14-longest-common-prefix/longest-common-prefix.py) |
+| 10 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | 🔴 Hard | [stone-game-v.py](./1685-stone-game-v/stone-game-v.py) |
 
 ---
 
