@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0d12" />
+      <stop offset="50%" stop-color="#16130b" />
+      <stop offset="100%" stop-color="#241b05" />
+    </linearGradient>
+
+    <!-- Golden Text Gradient -->
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#FFE79A" />
+      <stop offset="100%" stop-color="#FFAE00" />
+    </linearGradient>
+
+    <!-- Golden Bubble Gradients -->
+    <radialGradient id="bubble1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#FF8C00" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="bubble2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFB700" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Text Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="220" rx="18" fill="url(#bgGradient)" stroke="#382d13" stroke-width="1.5"/>
+
+  <!-- Ambient Bubble Circles -->
+  <circle cx="710" cy="70" r="140" fill="url(#bubble1)"/>
+  <circle cx="740" cy="170" r="100" fill="url(#bubble2)"/>
+  <circle cx="610" cy="150" r="60" fill="url(#bubble1)"/>
+  <circle cx="90" cy="190" r="85" fill="url(#bubble2)"/>
+  <circle cx="30" cy="40" r="50" fill="url(#bubble1)"/>
+
+  <!-- Title Text with Glow -->
+  <text x="50" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="44" fill="url(#goldText)" filter="url(#glow)">Code Practice</text>
+
+  <!-- Subtitle Text -->
+  <text x="50" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="500" font-size="19" fill="#E6C875" letter-spacing="0.5">Abhishek • LeetCode Problem Solving Portfolio</text>
+
+  <!-- Pill Badges (Matching Screenshot Style) -->
+  <!-- Python Pill -->
+  <g transform="translate(50, 145)">
+    <rect width="105" height="34" rx="17" fill="#1C180A" stroke="#FFD700" stroke-width="1.5"/>
+    <text x="52" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#FFE599" text-anchor="middle">Python 🐍</text>
+  </g>
+
+  <!-- C++ Pill -->
+  <g transform="translate(167, 145)">
+    <rect width="85" height="34" rx="17" fill="#1C180A" stroke="#FFB700" stroke-width="1.5"/>
+    <text x="42" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#FFE599" text-anchor="middle">C++ ⚡</text>
+  </g>
+
+  <!-- Java Pill -->
+  <g transform="translate(264, 145)">
+    <rect width="90" height="34" rx="17" fill="#1C180A" stroke="#E5C158" stroke-width="1.5"/>
+    <text x="45" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#FFE599" text-anchor="middle">Java ☕</text>
+  </g>
+
+  <!-- LeetCode Pill -->
+  <g transform="translate(366, 145)">
+    <rect width="115" height="34" rx="17" fill="#1C180A" stroke="#FF8C00" stroke-width="1.5"/>
+    <text x="57" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="13" fill="#FFE599" text-anchor="middle">LeetCode 🚀</text>
+  </g>
+</svg>

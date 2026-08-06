@@ -33,6 +33,16 @@ LANG_EMOJI = {
     'SQL': '🗄️'
 }
 
+LANG_COLOR = {
+    'Python': 'FFD700',
+    'C++': 'FFB700',
+    'Java': 'E5C158',
+    'JavaScript': 'F7DF1E',
+    'TypeScript': '3178C6',
+    'Go': '00ADD8',
+    'Rust': 'DEA584'
+}
+
 def auto_pad_folders(workspace_dir):
     """Automatically rename un-padded folders like '24-foo' to '0024-foo'."""
     subdirs = [
@@ -133,36 +143,42 @@ def main():
     medium_count = sum(1 for p in problems if p['difficulty'].lower() == 'medium')
     hard_count = sum(1 for p in problems if p['difficulty'].lower() == 'hard')
 
-    # Build language breakdown section
-    lang_stats_str = ""
+    # Build language badges string
+    lang_badges_list = []
     if lang_counter:
         for lang, count in lang_counter.most_common():
-            emoji = LANG_EMOJI.get(lang, '💻')
-            lang_stats_str += f"- {emoji} **{lang}:** {count}\n"
-    else:
-        lang_stats_str = "- 💻 **Solutions available in repository**\n"
+            color = LANG_COLOR.get(lang, 'FFD700')
+            lang_badges_list.append(
+                f"![{lang}](https://img.shields.io/badge/{lang}-{count}-{color}?style=for-the-badge&labelColor=11141A)"
+            )
+    lang_badges_str = " ".join(lang_badges_list)
 
-    readme_content = f"""# Code Practice
+    readme_content = f"""<div align="center">
 
-Welcome to my personal code practice repository! This repository is a curated collection of my solutions to various algorithmic and data structure problems, primarily sourced from **LeetCode**.
+![Header Banner](./.github/assets/header_banner.svg)
 
----
+<br/>
 
-## 📊 Repository Summary
+### 🏆 Premium LeetCode Portfolio Summary
 
-### 🎯 Difficulty Breakdown
-- 🟢 **Easy:** {easy_count}
-- 🟡 **Medium:** {medium_count}
-- 🔴 **Hard:** {hard_count}
-- 📈 **Total Solved:** {len(problems)}
+[![Total Solved](https://img.shields.io/badge/Total_Solved-{len(problems)}-FFD700?style=for-the-badge&logo=leetcode&logoColor=black&labelColor=11141A)](https://leetcode.com/u/4bhii/)
+[![Easy](https://img.shields.io/badge/Easy-{easy_count}-00FF87?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
+[![Medium](https://img.shields.io/badge/Medium-{medium_count}-FFB700?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
+[![Hard](https://img.shields.io/badge/Hard-{hard_count}-FF4B4B?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
 
-### 💻 Languages Used
-{lang_stats_str}
+<br/>
+
+### 💻 Languages Breakdown
+
+{lang_badges_str}
+
+</div>
+
 ---
 
 ## 📂 Solutions Index
 
-Here is the list of problems solved in this repository:
+Here is the complete list of problems solved in this repository, ordered by **LeetCode Problem ID**:
 
 | # | Problem | Difficulty | Solution |
 |---|---|---|---|
@@ -209,7 +225,9 @@ To run or test any of the solutions locally:
    ```
 
 ---
-*Happy Coding! 💻*
+<div align="center">
+  <i>Happy Coding! 💻 • Designed with Premium Golden Bubble Theme</i>
+</div>
 """
 
     output_readme_path = os.path.join(workspace_dir, "README.md")
@@ -230,9 +248,9 @@ To run or test any of the solutions locally:
 - 📈 **Total Solved:** {len(problems)}
 
 ### 💻 Languages Breakdown
-{lang_stats_str}
+- Python: {lang_counter.get('Python', 0)} | Java: {lang_counter.get('Java', 0)} | C++: {lang_counter.get('C++', 0)}
 
-✅ **README.md was successfully updated and synchronized!**
+✅ **README.md was successfully updated with Premium Golden Theme!**
 """
         try:
             with open(summary_path, "a", encoding="utf-8") as sf:

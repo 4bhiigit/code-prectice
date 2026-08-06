@@ -1,27 +1,29 @@
-# Code Practice
+<div align="center">
 
-Welcome to my personal code practice repository! This repository is a curated collection of my solutions to various algorithmic and data structure problems, primarily sourced from **LeetCode**.
+![Header Banner](./.github/assets/header_banner.svg)
 
----
+<br/>
 
-## 📊 Repository Summary
+### 🏆 Premium LeetCode Portfolio Summary
 
-### 🎯 Difficulty Breakdown
-- 🟢 **Easy:** 6
-- 🟡 **Medium:** 14
-- 🔴 **Hard:** 4
-- 📈 **Total Solved:** 24
+[![Total Solved](https://img.shields.io/badge/Total_Solved-26-FFD700?style=for-the-badge&logo=leetcode&logoColor=black&labelColor=11141A)](https://leetcode.com/u/4bhii/)
+[![Easy](https://img.shields.io/badge/Easy-7-00FF87?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
+[![Medium](https://img.shields.io/badge/Medium-15-FFB700?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
+[![Hard](https://img.shields.io/badge/Hard-4-FF4B4B?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
 
-### 💻 Languages Used
-- 🐍 **Python:** 20
-- ☕ **Java:** 4
-- ⚡ **C++:** 2
+<br/>
+
+### 💻 Languages Breakdown
+
+![Python](https://img.shields.io/badge/Python-20-FFD700?style=for-the-badge&labelColor=11141A) ![Java](https://img.shields.io/badge/Java-6-E5C158?style=for-the-badge&labelColor=11141A) ![C++](https://img.shields.io/badge/C++-2-FFB700?style=for-the-badge&labelColor=11141A)
+
+</div>
 
 ---
 
 ## 📂 Solutions Index
 
-Here is the list of problems solved in this repository:
+Here is the complete list of problems solved in this repository, ordered by **LeetCode Problem ID**:
 
 | # | Problem | Difficulty | Solution |
 |---|---|---|---|
@@ -48,6 +50,8 @@ Here is the list of problems solved in this repository:
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | 🟡 Medium | [generate-parentheses.py](./0022-generate-parentheses/generate-parentheses.py) |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | 🔴 Hard | [merge-k-sorted-lists.java](./0023-merge-k-sorted-lists/merge-k-sorted-lists.java), [merge-k-sorted-lists.py](./0023-merge-k-sorted-lists/merge-k-sorted-lists.py) |
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | 🟡 Medium | [swap-nodes-in-pairs.py](./0024-swap-nodes-in-pairs/swap-nodes-in-pairs.py) |
+| 27 | [Remove Element](https://leetcode.com/problems/remove-element) | 🟢 Easy | [remove-element.java](./0027-remove-element/remove-element.java) |
+| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | 🟡 Medium | [combination-sum.java](./0039-combination-sum/combination-sum.java) |
 | 1563 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | 🔴 Hard | [stone-game-v.py](./1563-stone-game-v/stone-game-v.py) |
 
 ---
@@ -75,4 +79,6 @@ To run or test any of the solutions locally:
    ```
 
 ---
-*Happy Coding! 💻*
+<div align="center">
+  <i>Happy Coding! 💻 • Designed with Premium Golden Bubble Theme</i>
+</div>
