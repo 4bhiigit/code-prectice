@@ -1,17 +1,13 @@
 name: Auto Update README
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    # Runs automatically every 6 hours
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
-
-concurrency:
-  group: readme-update-${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
   update-readme:
@@ -29,7 +25,7 @@ jobs:
           python3 .github/scripts/generate_readme.py
           git add .
           if ! git diff --cached --quiet; then
-            git commit -m "docs: auto-update README.md and format folder padding [skip ci]"
+            git commit -m "docs: scheduled auto-update README.md and folder structure [skip ci]"
             git push origin main
           else
             echo "No changes to commit"
