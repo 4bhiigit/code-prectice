@@ -1,5 +1,6 @@
 import os
 import re
+import subprocess
 from collections import Counter
 
 # Language mapping based on file extension
@@ -33,9 +34,36 @@ LANG_EMOJI = {
     'SQL': '🗄️'
 }
 
+def auto_pad_folders(workspace_dir):
+    """Automatically rename un-padded folders like '24-foo' to '0024-foo'."""
+    subdirs = [
+        d for d in os.listdir(workspace_dir) 
+        if os.path.isdir(os.path.join(workspace_dir, d)) 
+        and not d.startswith('.') 
+        and d != '.github'
+    ]
+
+    for folder in subdirs:
+        match = re.match(r'^(\d{1,3})-(.*)', folder)
+        if match:
+            num = int(match.group(1))
+            rest = match.group(2)
+            new_folder_name = f"{num:04d}-{rest}"
+            if folder != new_folder_name:
+                old_path = os.path.join(workspace_dir, folder)
+                new_path = os.path.join(workspace_dir, new_folder_name)
+                try:
+                    os.rename(old_path, new_path)
+                    print(f"Auto-padded folder: {folder} -> {new_folder_name}")
+                except Exception as e:
+                    print(f"Error auto-padding folder {folder}: {e}")
+
 def main():
     workspace_dir = os.getcwd()
     
+    # First, auto-pad any un-padded problem folders
+    auto_pad_folders(workspace_dir)
+
     subdirs = [
         d for d in os.listdir(workspace_dir) 
         if os.path.isdir(os.path.join(workspace_dir, d)) 
@@ -56,7 +84,6 @@ def main():
         folder_path = os.path.join(workspace_dir, folder)
         readme_path = os.path.join(folder_path, "README.md")
         
-        # Clean title from folder name if README not present
         title_raw = re.sub(r'^\d+-', '', folder).replace('-', ' ').title()
         title = title_raw
         link = ""
