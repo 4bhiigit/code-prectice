@@ -19,15 +19,19 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Generate README & Job Summary
-        run: python3 .github/scripts/generate_readme.py
-
-      - name: Commit and push changes if updated
-        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "docs: auto-update README.md [skip ci]"
-          file_pattern: "README.md"
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
-          commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          ref: main
+
+      - name: Generate README & Auto Commit
+        run: |
+          git checkout main
+          python3 .github/scripts/generate_readme.py
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "docs: auto-update README.md [skip ci]"
+            git push origin main
+          else
+            echo "No changes to README.md"
+          fi
