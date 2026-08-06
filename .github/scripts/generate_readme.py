@@ -1,6 +1,5 @@
 import os
 import re
-import subprocess
 from collections import Counter
 
 # Language mapping based on file extension
@@ -84,6 +83,7 @@ def main():
         folder_path = os.path.join(workspace_dir, folder)
         readme_path = os.path.join(folder_path, "README.md")
         
+        prob_id = get_sort_key(folder)
         title_raw = re.sub(r'^\d+-', '', folder).replace('-', ' ').title()
         title = title_raw
         link = ""
@@ -121,6 +121,7 @@ def main():
             sol_links.append(f"[{sf}](./{folder}/{sf})")
             
         problems.append({
+            "id": prob_id,
             "folder": folder,
             "title": title,
             "link": link,
@@ -167,7 +168,7 @@ Here is the list of problems solved in this repository:
 |---|---|---|---|
 """
 
-    for idx, p in enumerate(problems, 1):
+    for p in problems:
         prob_cell = f"[{p['title']}]({p['link']})" if p['link'] else p['title']
         
         diff = p['difficulty']
@@ -180,7 +181,7 @@ Here is the list of problems solved in this repository:
         else:
             diff_cell = diff
             
-        readme_content += f"| {idx} | {prob_cell} | {diff_cell} | {p['solutions']} |\n"
+        readme_content += f"| {p['id']} | {prob_cell} | {diff_cell} | {p['solutions']} |\n"
 
     readme_content += """
 ---
