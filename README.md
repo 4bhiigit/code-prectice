@@ -7,14 +7,15 @@ Welcome to my personal code practice repository! This repository is a curated co
 ## 📊 Repository Summary
 
 ### 🎯 Difficulty Breakdown
-- 🟢 **Easy:** 4
-- 🟡 **Medium:** 9
-- 🔴 **Hard:** 3
-- 📈 **Total Solved:** 16
+- 🟢 **Easy:** 6
+- 🟡 **Medium:** 12
+- 🔴 **Hard:** 4
+- 📈 **Total Solved:** 22
 
 ### 💻 Languages Used
-- 🐍 **Python:** 13
+- 🐍 **Python:** 19
 - ⚡ **C++:** 2
+- ☕ **Java:** 2
 
 ---
 
@@ -37,9 +38,15 @@ Here is the list of problems solved in this repository:
 | 11 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | 🟢 Easy |  |
 | 12 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | 🟢 Easy | [longest-common-prefix.py](./14-longest-common-prefix/longest-common-prefix.py) |
 | 13 | [3Sum](https://leetcode.com/problems/3sum) | 🟡 Medium | [3sum.py](./15-3sum/3sum.py) |
-| 14 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | 🟡 Medium | [letter-combinations-of-a-phone-number.cpp](./17-letter-combinations-of-a-phone-number/letter-combinations-of-a-phone-number.cpp) |
-| 15 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | 🟡 Medium | [remove-nth-node-from-end-of-list.cpp](./19-remove-nth-node-from-end-of-list/remove-nth-node-from-end-of-list.cpp) |
-| 16 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | 🔴 Hard | [stone-game-v.py](./1685-stone-game-v/stone-game-v.py) |
+| 14 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | 🟡 Medium | [3sum-closest.py](./16-3sum-closest/3sum-closest.py) |
+| 15 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | 🟡 Medium | [letter-combinations-of-a-phone-number.cpp](./17-letter-combinations-of-a-phone-number/letter-combinations-of-a-phone-number.cpp) |
+| 16 | [4Sum](https://leetcode.com/problems/4sum) | 🟡 Medium | [4sum.py](./18-4sum/4sum.py) |
+| 17 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | 🟡 Medium | [remove-nth-node-from-end-of-list.cpp](./19-remove-nth-node-from-end-of-list/remove-nth-node-from-end-of-list.cpp) |
+| 18 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | 🟢 Easy | [valid-parentheses.java](./20-valid-parentheses/valid-parentheses.java), [valid-parentheses.py](./20-valid-parentheses/valid-parentheses.py) |
+| 19 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | 🟢 Easy | [merge-two-sorted-lists.java](./21-merge-two-sorted-lists/merge-two-sorted-lists.java), [merge-two-sorted-lists.py](./21-merge-two-sorted-lists/merge-two-sorted-lists.py) |
+| 20 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | 🟡 Medium | [generate-parentheses.py](./22-generate-parentheses/generate-parentheses.py) |
+| 21 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | 🔴 Hard | [merge-k-sorted-lists.py](./23-merge-k-sorted-lists/merge-k-sorted-lists.py) |
+| 22 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | 🔴 Hard | [stone-game-v.py](./1685-stone-game-v/stone-game-v.py) |
 
 ---
 

@@ -11,43 +11,24 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;()&quot;</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
-</div>
+<pre>
+<strong>Input:</strong> s = &quot;()&quot;
+<strong>Output:</strong> true
+</pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;()[]{}&quot;</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
-</div>
+<pre>
+<strong>Input:</strong> s = &quot;()[]{}&quot;
+<strong>Output:</strong> true
+</pre>
 
 <p><strong class="example">Example 3:</strong></p>
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;(]&quot;</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">false</span></p>
-</div>
-
-<p><strong class="example">Example 4:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;([])&quot;</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
-</div>
-
-<p><strong class="example">Example 5:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;([)]&quot;</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">false</span></p>
-</div>
+<pre>
+<strong>Input:</strong> s = &quot;(]&quot;
+<strong>Output:</strong> false
+</pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
