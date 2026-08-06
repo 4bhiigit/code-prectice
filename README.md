@@ -1,15 +1,20 @@
 # Code Practice
 
-Welcome to my personal code practice repository! This repository is a curated collection of my solutions to various algorithmic and data structure problems, primarily sourced from **LeetCode**. 
+Welcome to my personal code practice repository! This repository is a curated collection of my solutions to various algorithmic and data structure problems, primarily sourced from **LeetCode**.
 
-All solutions are implemented in **Python** with focus on correctness, optimal time & space complexity, and clean code principles.
+---
 
 ## 📊 Repository Summary
 
-- **Total Solved:** 10
+### 🎯 Difficulty Breakdown
 - 🟢 **Easy:** 2
-- 🟡 **Medium:** 5
+- 🟡 **Medium:** 7
 - 🔴 **Hard:** 3
+- 📈 **Total Solved:** 12
+
+### 💻 Languages Used
+- 🐍 **Python:** 10
+- ⚡ **C++:** 1
 
 ---
 
@@ -28,16 +33,17 @@ Here is the list of problems solved in this repository:
 | 7 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | 🟡 Medium | [integer-to-roman.py](./12-integer-to-roman/integer-to-roman.py) |
 | 8 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | 🟢 Easy |  |
 | 9 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | 🟢 Easy | [longest-common-prefix.py](./14-longest-common-prefix/longest-common-prefix.py) |
-| 10 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | 🔴 Hard | [stone-game-v.py](./1685-stone-game-v/stone-game-v.py) |
+| 10 | [3Sum](https://leetcode.com/problems/3sum) | 🟡 Medium | [3sum.py](./15-3sum/3sum.py) |
+| 11 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | 🟡 Medium | [letter-combinations-of-a-phone-number.cpp](./17-letter-combinations-of-a-phone-number/letter-combinations-of-a-phone-number.cpp) |
+| 12 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | 🔴 Hard | [stone-game-v.py](./1685-stone-game-v/stone-game-v.py) |
 
 ---
 
 ## 🛠️ Tech Stack & Structure
 
-- **Language:** Python 3.x
 - **Structure:** Each problem has its own directory containing:
   - `README.md` - The problem description, examples, and constraints.
-  - `<solution>.py` - The optimized python solution code.
+  - Solution file(s) (e.g. `.py`, `.cpp`, `.java`).
 
 ## 🚀 How to Run Locally
 
@@ -50,8 +56,8 @@ To run or test any of the solutions locally:
    ```
 
 2. **Run a solution:**
-   You can run the python files using your preferred environment or command line:
    ```bash
+   # Example Python
    python "10-regular-expression-matching/regular-expression-matching.py"
    ```
 

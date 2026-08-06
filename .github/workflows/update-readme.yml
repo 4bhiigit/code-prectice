@@ -6,7 +6,6 @@ on:
       - main
     paths-ignore:
       - 'README.md'
-      - '.github/**'
 
 permissions:
   contents: write
@@ -22,17 +21,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate README
-        run: python3 .github/scripts/generate_readme.py
-
-      - name: Commit and push if changed
+      - name: Auto-update README with retry & rebase
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md
-          if ! git diff --cached --quiet; then
-            git commit -m "docs: auto-update README.md [skip ci]"
-            git push
-          else
-            echo "No changes to README.md"
-          fi
+
+          for i in {1..5}; do
+            echo "Attempt $i to update and push README..."
+            git pull --rebase origin main
+            python3 .github/scripts/generate_readme.py
+            git add README.md
+            if ! git diff --cached --quiet; then
+              git commit -m "docs: auto-update README.md [skip ci]"
+              if git push origin main; then
+                echo "Successfully updated and pushed README.md!"
+                exit 0
+              fi
+            else
+              echo "No changes to README.md."
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Failed to push README.md after 5 attempts."
+          exit 1
