@@ -6,8 +6,8 @@
 
 ### 🏆 Premium LeetCode Portfolio Summary
 
-[![Total Solved](https://img.shields.io/badge/Total_Solved-29-FFD700?style=for-the-badge&logo=leetcode&logoColor=black&labelColor=11141A)](https://leetcode.com/u/4bhii/)
-[![Easy](https://img.shields.io/badge/Easy-8-00FF87?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
+[![Total Solved](https://img.shields.io/badge/Total_Solved-30-FFD700?style=for-the-badge&logo=leetcode&logoColor=black&labelColor=11141A)](https://leetcode.com/u/4bhii/)
+[![Easy](https://img.shields.io/badge/Easy-9-00FF87?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
 [![Medium](https://img.shields.io/badge/Medium-16-FFB700?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
 [![Hard](https://img.shields.io/badge/Hard-5-FF4B4B?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
 
@@ -15,7 +15,7 @@
 
 ### 💻 Languages Breakdown
 
-![Python](https://img.shields.io/badge/Python-20-FFD700?style=for-the-badge&labelColor=11141A) ![Java](https://img.shields.io/badge/Java-6-E5C158?style=for-the-badge&labelColor=11141A) ![C](https://img.shields.io/badge/C-3-FFD700?style=for-the-badge&labelColor=11141A) ![C++](https://img.shields.io/badge/C++-2-FFB700?style=for-the-badge&labelColor=11141A)
+![Python](https://img.shields.io/badge/Python-20-FFD700?style=for-the-badge&labelColor=11141A) ![Java](https://img.shields.io/badge/Java-6-E5C158?style=for-the-badge&labelColor=11141A) ![C](https://img.shields.io/badge/C-4-FFD700?style=for-the-badge&labelColor=11141A) ![C++](https://img.shields.io/badge/C++-2-FFB700?style=for-the-badge&labelColor=11141A)
 
 </div>
 
@@ -54,6 +54,7 @@ Here is the complete list of problems solved in this repository, ordered by **Le
 | 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group) | 🔴 Hard | [reverse-nodes-in-k-group.c](./0025-reverse-nodes-in-k-group/reverse-nodes-in-k-group.c) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element) | 🟢 Easy | [remove-element.java](./0027-remove-element/remove-element.java) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element) | 🟢 Easy | [remove-element.c](./27-remove-element/remove-element.c) |
+| 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string) | 🟢 Easy | [find-the-index-of-the-first-occurrence-in-a-string.c](./0028-find-the-index-of-the-first-occurrence-in-a-string/find-the-index-of-the-first-occurrence-in-a-string.c) |
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | 🟡 Medium | [combination-sum.java](./0039-combination-sum/combination-sum.java) |
 | 1563 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | 🔴 Hard | [stone-game-v.py](./1563-stone-game-v/stone-game-v.py) |
 
