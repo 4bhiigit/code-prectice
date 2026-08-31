@@ -6,16 +6,16 @@
 
 ### 🏆 Premium LeetCode Portfolio Summary
 
-[![Total Solved](https://img.shields.io/badge/Total_Solved-31-FFD700?style=for-the-badge&logo=leetcode&logoColor=black&labelColor=11141A)](https://leetcode.com/u/4bhii/)
+[![Total Solved](https://img.shields.io/badge/Total_Solved-32-FFD700?style=for-the-badge&logo=leetcode&logoColor=black&labelColor=11141A)](https://leetcode.com/u/4bhii/)
 [![Easy](https://img.shields.io/badge/Easy-9-00FF87?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
-[![Medium](https://img.shields.io/badge/Medium-16-FFB700?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
+[![Medium](https://img.shields.io/badge/Medium-17-FFB700?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
 [![Hard](https://img.shields.io/badge/Hard-6-FF4B4B?style=for-the-badge&labelColor=11141A)](https://leetcode.com/u/4bhii/)
 
 <br/>
 
 ### 💻 Languages Breakdown
 
-![Python](https://img.shields.io/badge/Python-20-FFD700?style=for-the-badge&labelColor=11141A) ![Java](https://img.shields.io/badge/Java-6-E5C158?style=for-the-badge&labelColor=11141A) ![C](https://img.shields.io/badge/C-4-FFD700?style=for-the-badge&labelColor=11141A) ![C++](https://img.shields.io/badge/C++-3-FFB700?style=for-the-badge&labelColor=11141A)
+![Python](https://img.shields.io/badge/Python-20-FFD700?style=for-the-badge&labelColor=11141A) ![Java](https://img.shields.io/badge/Java-6-E5C158?style=for-the-badge&labelColor=11141A) ![C++](https://img.shields.io/badge/C++-4-FFB700?style=for-the-badge&labelColor=11141A) ![C](https://img.shields.io/badge/C-4-FFD700?style=for-the-badge&labelColor=11141A)
 
 </div>
 
@@ -57,6 +57,7 @@ Here is the complete list of problems solved in this repository, ordered by **Le
 | 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string) | 🟢 Easy | [find-the-index-of-the-first-occurrence-in-a-string.c](./0028-find-the-index-of-the-first-occurrence-in-a-string/find-the-index-of-the-first-occurrence-in-a-string.c) |
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | 🟡 Medium | [combination-sum.java](./0039-combination-sum/combination-sum.java) |
 | 1563 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | 🔴 Hard | [stone-game-v.py](./1563-stone-game-v/stone-game-v.py) |
+| 2182 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points) | 🟡 Medium | [find-the-minimum-and-maximum-number-of-nodes-between-critical-points.cpp](./2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points/find-the-minimum-and-maximum-number-of-nodes-between-critical-points.cpp) |
 | 3375 | [Kth Smallest Amount With Single Denomination Combination](https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination) | 🔴 Hard | [kth-smallest-amount-with-single-denomination-combination.cpp](./3375-kth-smallest-amount-with-single-denomination-combination/kth-smallest-amount-with-single-denomination-combination.cpp) |
 
 ---
