@@ -49,11 +49,11 @@ Here is the complete list of problems solved in this repository, ordered by **Le
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | 🟢 Easy | [merge-two-sorted-lists.java](./0021-merge-two-sorted-lists/merge-two-sorted-lists.java), [merge-two-sorted-lists.py](./0021-merge-two-sorted-lists/merge-two-sorted-lists.py) |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | 🟡 Medium | [generate-parentheses.py](./0022-generate-parentheses/generate-parentheses.py) |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | 🔴 Hard | [merge-k-sorted-lists.java](./0023-merge-k-sorted-lists/merge-k-sorted-lists.java), [merge-k-sorted-lists.py](./0023-merge-k-sorted-lists/merge-k-sorted-lists.py) |
-| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | 🟡 Medium | [swap-nodes-in-pairs.py](./0024-swap-nodes-in-pairs/swap-nodes-in-pairs.py) |
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | 🟡 Medium | [swap-nodes-in-pairs.c](./24-swap-nodes-in-pairs/swap-nodes-in-pairs.c) |
+| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | 🟡 Medium | [swap-nodes-in-pairs.py](./0024-swap-nodes-in-pairs/swap-nodes-in-pairs.py) |
 | 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group) | 🔴 Hard | [reverse-nodes-in-k-group.c](./0025-reverse-nodes-in-k-group/reverse-nodes-in-k-group.c) |
-| 27 | [Remove Element](https://leetcode.com/problems/remove-element) | 🟢 Easy | [remove-element.java](./0027-remove-element/remove-element.java) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element) | 🟢 Easy | [remove-element.c](./27-remove-element/remove-element.c) |
+| 27 | [Remove Element](https://leetcode.com/problems/remove-element) | 🟢 Easy | [remove-element.java](./0027-remove-element/remove-element.java) |
 | 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string) | 🟢 Easy | [find-the-index-of-the-first-occurrence-in-a-string.c](./0028-find-the-index-of-the-first-occurrence-in-a-string/find-the-index-of-the-first-occurrence-in-a-string.c) |
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | 🟡 Medium | [combination-sum.java](./0039-combination-sum/combination-sum.java) |
 | 1563 | [Stone Game V](https://leetcode.com/problems/stone-game-v) | 🔴 Hard | [stone-game-v.py](./1563-stone-game-v/stone-game-v.py) |
